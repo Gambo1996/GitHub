@@ -1,1 +1,13 @@
+name: Simple Workflow Example
+
+on: [push]
+  
+jobs:
+  greet:
+  runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v4    
+      - name: Print a message
+        run: echo "Hello, GitHub Actions!"
 
